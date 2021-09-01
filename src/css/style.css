@@ -303,9 +303,9 @@ h4 {
    font-family: IBMPlexSans-Regular;
    font-size: 22px;
    text-decoration: underline black;
-   margin-left: 5%;
-   margin-right: 5%;
-   margin-top: 5%;
+   /* margin-left: 5%; */
+   /* margin-right: 5%; */
+   /* margin-top: 5%; */
 }
 
 .card_text {
@@ -448,9 +448,10 @@ h4 {
    display: flex;
    flex: 1 1 auto;
    width: 600px;
-   height: 180px;
-
+   padding: 10px 10px;
+   height: auto;
    gap: 40px;
+   position: relative;
 }
 
 .centralizar {
@@ -472,7 +473,9 @@ h4 {
    box-sizing: border-box;
    font-family: IBMPlexSans-Regular;
    font-size: 16px;
-   align-items: center;
+   position: absolute;
+   right: 20px;
+   /* align-items: center; */
 }
 
 .botao_excluir:hover {

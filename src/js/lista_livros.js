@@ -42,7 +42,7 @@ livros.forEach(el => {
                         <p class="dados_livros">CATEGORIA: ${el.categoria}</p>
                         <p class="dados_livros">EDIÇÃO: ${el.edicao}</p>
                         <p class="dados_livros">EDITORA: ${el.editora}</p>
-                        <div class="row justify-content-center">
+                        <div class="row">
                             <button class="botao_excluir">Excluir</button>
                         </div>
                     </div>
