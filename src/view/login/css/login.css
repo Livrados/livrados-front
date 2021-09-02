@@ -1,0 +1,192 @@
+/* Resetando configurações padrões do Browser */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   border: none;
+   font-family: "Raleway", "Helvetica";
+   color: #323232;
+}
+
+/***************************
+
+      Configurações Gerais 
+
+****************************/
+
+body {
+   background-image: url("img/livros.jpg");
+   background-size: cover;
+}
+
+textarea:focus,
+input:focus {
+   outline: none;
+}
+
+/***************************
+
+      Container login
+
+****************************/
+
+#container-login {
+   padding: 30px 50px;
+   margin: 0 auto;
+   margin-top: 15vh;
+
+   width: 27vw;
+   border-radius: 15px;
+   background-color: #fff;
+
+   text-align: center;
+   box-shadow: 0 0 10px #f8a72ddd;
+
+   transition: box-shadow 1s;
+}
+
+#container-login:hover {
+   box-shadow: 0 0 15px #f8a72ddd;
+}
+
+/***************************
+
+         Formulário
+
+****************************/
+
+form {
+   margin-top: 20px;
+   text-align: left;
+}
+
+/***************************
+
+      INPUTS E LABELS
+
+****************************/
+
+label,
+input {
+   width: 100%;
+   font-family: "Raleway", "Helvetica";
+}
+
+label {
+   font-size: 1.1rem;
+   line-height: 25px;
+}
+
+input {
+   margin-bottom: 15px;
+   border-bottom: 2px solid #f8a72d;
+   padding: 10px;
+   transition: border-bottom 1s;
+}
+
+input:focus {
+   border-bottom: 2px solid #f8a72d88;
+}
+
+::-webkit-input-placeholder {
+   font-style: italic;
+}
+
+.section-btn-entrar {
+   text-align: center;
+}
+
+.btn-entrar {
+   width: 95%;
+
+   background-color: #f8a72d;
+   margin-top: 40px;
+
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+
+   font-weight: 1000;
+   text-transform: uppercase;
+
+   box-shadow: 0 0 55px #f8a72d88;
+   transition: background-color 0.3s;
+}
+
+.btn-entrar:hover {
+   background-color: #f8a72dbb;
+}
+
+/***************************
+
+      Password Reveal
+
+****************************/
+
+.icon-psw {
+   padding: 6px;
+   border-radius: 50%;
+
+   position: absolute;
+   right: 0;
+   top: 5px;
+
+   cursor: pointer;
+   transition: background-color 0.5s;
+}
+
+.icon-psw:hover {
+   background-color: #00000022;
+}
+
+.pass-section {
+   position: relative;
+}
+
+/**********************
+
+SEÇÃO ESQUECEU A SENHA
+
+**********************/
+
+.forgot-pass-section {
+   text-align: right;
+}
+
+.forgot-pass-link {
+   font-style: italic;
+   font-size: 0.8rem;
+   color: #323232;
+   transition: color 0.5s;
+}
+
+.forgot-pass-link:hover {
+   color: #32323288;
+}
+
+/**********************
+
+NOVO CADASTRO
+
+**********************/
+
+.novo-cadastro {
+   margin-top: 35px;
+}
+
+.novocad-description {
+   margin-bottom: 20px;
+   font-size: 1rem;
+}
+
+.novocad-btn {
+   font-size: 0.9rem;
+   color: #f8a72d;
+   font-weight: 900;
+   transition: color 0.3s;
+}
+
+.novocad-btn:hover {
+   color: #f8a72dbb;
+}
