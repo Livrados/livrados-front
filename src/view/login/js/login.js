@@ -9,6 +9,7 @@ const corsDef = {
 };
 
 btnLogin.addEventListener('click', async() => {
-   const loginValidation = await fetch(`http://localhost:3000/login/${email.value}/${password.value}`)
-   console.log(loginValidation.body.response);
+   await fetch(`http://localhost:3000/login/${email.value}/${password.value}`)
+   .then(res => (console.log(res)))
+
 })
