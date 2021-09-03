@@ -16,7 +16,7 @@
 ****************************/
 
 body {
-   background-image: url("img/livros.jpg");
+   background-image: url("../img/livros.jpg");
    background-size: cover;
 }
 
