@@ -7,7 +7,7 @@ btnLogin.addEventListener('click', async() => {
    const parameters = new URLSearchParams();
    //parameters.append('nome', 'Bruno');
    parameters.append('email', email.value);
-   parameters.append('senha', password.value);
+   parameters.append('password', password.value);
 
    const requestDetails = { 
       method: 'POST',
@@ -17,7 +17,7 @@ btnLogin.addEventListener('click', async() => {
       body: parameters
    }
 
-   let tryLogin = await fetch(`http://localhost:3000/auth/login`, requestDetails);
+   let tryLogin = await fetch(`http://localhost:3000/login`, requestDetails);
    let result = await tryLogin.json();
 
    if (!result.success)
