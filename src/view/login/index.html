@@ -7,7 +7,8 @@
 
       <title>Login</title>
 
-      <link rel="stylesheet" href="css/login.css" />
+      <link href="bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/login.css"/>
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
          href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap"
@@ -20,26 +21,15 @@
    </head>
 
    <body>
-      <div id="container-login">
+      <div id="container-login" class="container-login">
          <h2>Login</h2>
 
          <form method="POST">
             <label for="email">Email</label>
-            <input
-               type="email"
-               id="email"
-               placeholder="Insira seu email"
-               autocomplete="off"
-            />
-
+            <input type="email" id="email" placeholder="Insira seu email" autocomplete="off"/>
             <label for="password">Senha</label>
             <div class="pass-section">
-               <input
-                  type="password"
-                  id="password"
-                  placeholder="Insira sua senha"
-                  autocomplete="off"
-               />
+               <input type="password" id="password" placeholder="Insira sua senha" autocomplete="off"/>
                <i class="far fa-eye icon-psw" id="pass-reveal-png"></i>
             </div>
 
@@ -50,13 +40,12 @@
             </div>
 
             <div class="section-btn-entrar">
-               <input type="submit" id="btnLogin" class="btn-entrar" value="Entrar" />
+               <input type="submit" id="btnLogin" class="btn-entrar" value="Entrar"/>
             </div>
          </form>
 
          <section class="novo-cadastro" id="novo-cadastro">
-            <p class="novocad-description">Ainda não possui uma conta?</p>
-            <a class="novocad-btn" href="../cadastrar_cliente/">Cadastrar</a>
+            <p class="novocad-description">Ainda não possui uma conta?<a class="novocad-btn" href="../cadastrar_cliente/">Cadastrar-se</a></p>
          </section>
       </div>
       <script src="js/login.js"></script>

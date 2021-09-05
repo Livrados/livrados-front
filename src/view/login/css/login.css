@@ -16,7 +16,6 @@
 ****************************/
 
 body {
-   background-image: url("../img/livros.jpg");
    background-size: cover;
 }
 
@@ -30,25 +29,26 @@ input:focus {
       Container login
 
 ****************************/
-
-#container-login {
-   padding: 30px 50px;
+.container-login {
+   padding: 30px 40px;
    margin: 0 auto;
-   margin-top: 15vh;
-
+   margin-top: 10vh;
+   margin-bottom: 10vh;
    width: 27vw;
-   border-radius: 15px;
+   height: 37vw;
+   border-radius: 10px;
    background-color: #fff;
-
    text-align: center;
-   box-shadow: 0 0 10px #f8a72ddd;
-
-   transition: box-shadow 1s;
+   border: 1px solid #F2F2F2;
+   box-sizing: border-box;
+   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.15);
+   transition: 0.3s;
 }
 
-#container-login:hover {
-   box-shadow: 0 0 15px #f8a72ddd;
+.container-login:hover{
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
 
 /***************************
 
@@ -110,7 +110,6 @@ input:focus {
    font-weight: 1000;
    text-transform: uppercase;
 
-   box-shadow: 0 0 55px #f8a72d88;
    transition: background-color 0.3s;
 }
 
