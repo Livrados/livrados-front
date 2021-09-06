@@ -1,31 +1,35 @@
-const email = document.getElementById('email');
-const password = document.getElementById('password');
-const btnLogin = document.getElementById('btnLogin');
+const email = document.querySelector('#email');
+const password = document.querySelector('#password');
+const btnLogin = document.querySelector('#btnLogin');
 
-btnLogin.addEventListener('click', async() => {
+btnLogin.addEventListener('click', async () => {
 
-   const parameters = new URLSearchParams();
-   //parameters.append('nome', 'Bruno');
-   parameters.append('email', email.value);
-   parameters.append('password', password.value);
+   console.log(`Box Email = ${email.value} e box Password = ${password.value}`);
 
-   const requestDetails = { 
+   const requestDetails = {
       method: 'POST',
-      headers: new Headers({
-          'Accept': 'application/json'
-      }),
-      body: parameters
+      mode: 'no-cors',
+      body: {
+         'email': email.value,
+         'password': password.value,
+      },
+      headers: { 'content-type': 'application/json'},
    }
 
-   let tryLogin = await fetch(`http://localhost:3000/login`, requestDetails);
-   let result = await tryLogin.json();
+   console.log(requestDetails);
 
-   if (!result.success)
-      return window.alert(result.error)
+   try {
+      await fetch('http://localhost:3000/login/', requestDetails)
 
-      window.alert(result.success);
-      window.location.replace('https://livrados.vercel.app');
+      //if (!result.success)
+         //return window.alert(result.error);
 
+      //window.alert(result.success);
+      //window.location.replace('https://livrados.vercel.app');
+
+   } catch (err) {
+      console.log("Erro ao acessar endpoint de login : " + err)
+   }
    //.then(res => res.json())
    //.then(data => { console.log(data)});
 

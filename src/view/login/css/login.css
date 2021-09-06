@@ -36,7 +36,8 @@ input:focus {
    margin: 0 auto;
    margin-top: 15vh;
 
-   width: 27vw;
+   min-width: 350px;
+   width: 35%;
    border-radius: 15px;
    background-color: #fff;
 
