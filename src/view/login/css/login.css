@@ -29,7 +29,7 @@ input:focus {
       Container login
 
 ****************************/
-#container-login {
+.login {
    padding: 30px 40px;
    margin: 0 auto;
    margin-top: 10vh;
@@ -45,7 +45,7 @@ input:focus {
    transition: 0.3s;
 }
 
-.container-login:hover{
+.login:hover{
    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
