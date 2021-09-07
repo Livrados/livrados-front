@@ -24,6 +24,19 @@ input:focus {
    outline: none;
 }
 
+.logoSuperior{
+   position: absolute;
+   top: 0px;
+   left: 0px;
+ }
+
+ .container{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   margin-top: auto;
+ }
+
 /***************************
 
       Container login
