@@ -16,7 +16,7 @@
 ****************************/
 
 body {
-   background-image: url("../img/livros.jpg");
+
    background-size: cover;
 }
 
@@ -31,16 +31,18 @@ input:focus {
 
 ****************************/
 
-#container-login {
+.container-login {
    background-color: #fff;
    width: 45vw;
    margin: 0 auto;
    margin-top: 25vh;
    text-align: left;
-   border-radius: 15px;
+   border-radius: 10px;
    padding: 30px 30px;
-   /* box-shadow: 4px 4px 10px #f8a72d; */
-   box-shadow: 0 0 10px #f8a72d;
+   border: 1px solid #F2F2F2;
+   box-sizing: border-box;
+   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.15);
+   transition: 0.3s;
 }
 
 p {
@@ -51,8 +53,7 @@ p {
 }
 
 #container-login:hover {
-   box-shadow: 0 0 25px #f8a72d;
-   transition: 1s;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 #header-block {
@@ -79,7 +80,7 @@ form {
 
 label,
 input {
-   width: 250%;
+   width: 225%;
    font-family: "Raleway", "Helvetica";
 }
 
