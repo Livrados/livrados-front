@@ -16,7 +16,7 @@
 ****************************/
 
 body {
-   background-size: cover;
+   background-color: #FAFAFA;
 }
 
 textarea:focus,
@@ -30,7 +30,7 @@ input:focus {
    left: 0px;
  }
 
- .container{
+ .container-logo{
    display: flex;
    justify-content: center;
    width: 100%;
@@ -50,7 +50,7 @@ input:focus {
    min-width: 350px;
    width: 35%;
    border-radius: 15px;
-   background-color: #fff;
+   background-color: #FFF;
    text-align: center;
    border: 1px solid #F2F2F2;
    box-sizing: border-box;
@@ -96,6 +96,7 @@ input {
    border-bottom: 2px solid #f8a72d;
    padding: 10px;
    transition: border-bottom 1s;
+   background-color: transparent;
 }
 
 input:focus {
@@ -193,6 +194,8 @@ NOVO CADASTRO
 }
 
 .novocad-btn {
+   margin-top: 10px;
+   display: block;
    font-size: 0.9rem;
    color: #f8a72d;
    font-weight: 900;
