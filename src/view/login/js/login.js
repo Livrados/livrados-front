@@ -19,7 +19,7 @@ btnLogin.addEventListener('click', async () => {
    console.log(requestDetails);
 
    try {
-      await fetch('http://localhost:3000/login/', requestDetails)
+      await fetch('http://localhost:3000/login', requestDetails)
 
       //if (!result.success)
          //return window.alert(result.error);
