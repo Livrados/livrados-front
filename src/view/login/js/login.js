@@ -13,7 +13,7 @@ btnLogin.addEventListener('click', async () => {
          'email': email.value,
          'password': password.value,
       },
-      headers: { 'content-type': 'application/json'},
+      headers: { 'Content-Type': 'application/json'},
    }
 
    console.log(requestDetails);
