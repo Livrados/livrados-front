@@ -8,18 +8,19 @@ btnLogin.addEventListener('click', async () => {
 
    const requestDetails = {
       method: 'POST',
-      mode: 'no-cors',
-      body: {
-         'email': email.value,
-         'password': password.value,
-      },
+      body: JSON.stringify({
+         email: email.value,
+         password: password.value
+      }),
       headers: { 'Content-Type': 'application/json'},
    }
 
-   console.log(requestDetails);
+   console.log(requestDetails);  
 
    try {
       await fetch('http://localhost:3000/login', requestDetails)
+      .then(res => (res.json()))
+      .then(data => console.log(data));
 
       //if (!result.success)
          //return window.alert(result.error);
@@ -28,10 +29,8 @@ btnLogin.addEventListener('click', async () => {
       //window.location.replace('https://livrados.vercel.app');
 
    } catch (err) {
-      console.log("Erro ao acessar endpoint de login : " + err)
+      console.log("Erro ao acessar endpoint de login : " + err);
    }
-   //.then(res => res.json())
-   //.then(data => { console.log(data)});
 
 });
 
