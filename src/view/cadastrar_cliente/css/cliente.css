@@ -71,7 +71,7 @@ body {
   pointer-event: none;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 16px;
   margin-top: 13px;
   transition: all .3s ease-out;
 }
