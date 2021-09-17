@@ -70,7 +70,7 @@ body {
   color: black;
   pointer-event: none;
   position: absolute;
-  top: 0;
+  top: -10px;
   left: 16px;
   margin-top: 13px;
   transition: all .3s ease-out;
