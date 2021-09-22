@@ -7,14 +7,9 @@
    <title>Livrados</title>
 
    <link rel="stylesheet" href="./css/index.css">
+   <script src="./js/isLoged.js"></script>
 </head>
 <body>
-
-   <script>
-      const hasToken = localStorage.token ? true : false;
-      if (!hasToken)
-         window.location.replace('https://livrados.vercel.app/view/login/');
-   </script>
 
    <header class="container-menu">
       <img src="./img/LivradosLogo.png" >

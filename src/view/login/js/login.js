@@ -2,7 +2,9 @@ const email = document.querySelector('#email');
 const password = document.querySelector('#password');
 const btnLogin = document.querySelector('#btnLogin');
 
-btnLogin.addEventListener('click', async () => {
+btnLogin.addEventListener('click', async (evt) => {
+
+   evt.preventDefault();
 
    const requestDetails = {
       method: 'POST',
@@ -14,23 +16,18 @@ btnLogin.addEventListener('click', async () => {
    }
 
    try {
-      await fetch('http://localhost:3000/login', requestDetails)
-      .then(res => (res.json()))
-      .then(data => {
-         if (data.error)
-            return window.alert(data.error);
+      const result = await fetch('http://localhost:3000/login', requestDetails);
+      const jsonResult = await result.json();
 
-         if (data.success) {
-            window.alert(data.success);
-            window.location.replace('https://livrados.vercel.app');
-         }
+         if (jsonResult.error)
+            return window.alert(jsonResult.error);
 
-      });
+         localStorage.setItem('token', jsonResult.token);
 
+         window.alert(jsonResult.success);
+         window.location.replace('https://livrados.vercel.app');
+         
    } catch (err) {
       console.log("Erro ao acessar endpoint de login : " + err);
    }
-
-});
-
-
+})
